@@ -229,7 +229,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); 
         jLabel1.setText("Valassza ki a megfelelo ertekeket!");
 
         jLabel2.setText("Ev");
@@ -241,7 +241,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel5.setText("Ora");
 
         jLabel6.setText("Perc");
-        //légyszi eclipseből ne használd a mavent, mert egy rakás szar. okok, sry
+        
         Ev.setModel(new javax.swing.DefaultComboBoxModel(CBR.ev));
         
         Honap.setModel(new javax.swing.DefaultComboBoxModel(CBR.honap));
@@ -415,7 +415,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     	URL url = getClass().getClassLoader().getResource("Dict.txt");
     	String utvonal=url.toExternalForm();
-    	String utvonal2 = utvonal.replace("file:/", "");
+    	String utvonal2 = utvonal.replace("file:", "");
     	
         Desktop dt = Desktop.getDesktop();
         try {

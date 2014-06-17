@@ -162,7 +162,7 @@ public class T0D04PP {
         try {
         	URL url = getClass().getClassLoader().getResource("Dict.txt");
         	String utvonal=url.toExternalForm();
-        	String utvonal2 = utvonal.replace("file:/", "");
+        	String utvonal2 = utvonal.replace("file:", "");
         	logger.info("Utvonal meghatarozva.");
         	Writer swing = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(utvonal2, true), "UTF8"));
             logger.info("Forras fajl beolvaso peldanyositva.");
